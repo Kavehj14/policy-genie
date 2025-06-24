@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Shield, Users, Calendar } from 'lucide-react';
 import { Member } from '../types/member';
+import Logo from './Logo';
 
 interface VerificationFormProps {
   onVerificationSuccess: (member: Member) => void;
@@ -45,8 +46,8 @@ const VerificationForm: React.FC<VerificationFormProps> = ({
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
-            <Shield className="w-8 h-8 text-white" />
+          <div className="inline-flex items-center justify-center mb-4">
+            <Logo className="w-16 h-16" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Member Verification</h1>
           <p className="text-gray-600">Please verify your identity to access your policy information</p>
